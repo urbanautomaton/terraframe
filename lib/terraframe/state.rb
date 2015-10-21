@@ -60,10 +60,14 @@ module Terraframe
       provider
     end
 
-    def variable
-      msg = "TODO: implement tfvar support."
-      logger.fatal msg
-      raise msg
+    def variable(name, value)
+      if @__output[:variable][name]
+        msg = "Duplicate variable declaration: '#{name}'"
+        logger.fatal msg
+        raise msg
+      end
+
+      @__output[:variable][name] = value
     end
 
     def resource(resource_type, resource_name, &block)
