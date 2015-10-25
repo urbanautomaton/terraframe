@@ -14,7 +14,6 @@ module Terraframe
         :aws_db_parameter_group           => Terraframe::AWS::AWSResource,
         :aws_eip                          => Terraframe::AWS::AWSResource,
         :aws_elb                          => Terraframe::AWS::AWSResource,
-        :aws_internet_gateway             => Terraframe::AWS::AWSResource,
         :aws_launch_configuration         => Terraframe::AWS::AWSResource,
         :aws_network_acl                  => Terraframe::AWS::AWSResource,
         :aws_key_pair                     => Terraframe::AWS::AWSResource,
@@ -25,6 +24,7 @@ module Terraframe
         :aws_vpc_dhcp_options_association => Terraframe::AWS::AWSResource,
 
         :aws_instance         => Terraframe::AWS::AWSTaggedResource,
+        :aws_internet_gateway => Terraframe::AWS::AWSTaggedResource,
         :aws_route_table      => Terraframe::AWS::AWSTaggedResource,
         :aws_security_group   => Terraframe::AWS::AWSSecurityGroupResource,
         :aws_subnet           => Terraframe::AWS::AWSTaggedResource,
