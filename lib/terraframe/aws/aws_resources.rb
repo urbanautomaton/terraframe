@@ -38,7 +38,7 @@ module Terraframe
     class AWSTagBlock < Terraframe::ScriptItem
     end
 
-    class AWSSecurityGroupResource < AWSResource
+    class AWSSecurityGroupResource < AWSTaggedResource
       def initialize(name, vars, context, &block)
         super(name, vars, context, &block)
         @fields["name"] = name
