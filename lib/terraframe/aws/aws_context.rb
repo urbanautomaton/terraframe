@@ -23,6 +23,12 @@ module Terraframe
         :aws_s3_bucket                    => Terraframe::AWS::AWSResource,
         :aws_vpc_dhcp_options_association => Terraframe::AWS::AWSResource,
 
+        :aws_iam_group                   => Terraframe::AWS::AWSResource,
+        :aws_iam_policy                  => Terraframe::AWS::AWSResource,
+        :aws_iam_group_policy_attachment => Terraframe::AWS::AWSResource,
+        :aws_iam_group_membership        => Terraframe::AWS::AWSResource,
+        :aws_iam_user                    => Terraframe::AWS::AWSResource,
+
         :aws_instance         => Terraframe::AWS::AWSTaggedResource,
         :aws_internet_gateway => Terraframe::AWS::AWSTaggedResource,
         :aws_route_table      => Terraframe::AWS::AWSTaggedResource,
